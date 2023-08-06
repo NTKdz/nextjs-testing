@@ -1,0 +1,36 @@
+.testing-animation {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: spinning-around 4s ease-in infinite;
+}
+
+.main-div {
+  margin-top: 100px;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  border-radius:25% ;
+  animation: border-rounding 4s infinite;
+}
+
+@keyframes border-rounding {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinning-around {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
